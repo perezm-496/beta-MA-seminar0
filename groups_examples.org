@@ -3,9 +3,7 @@
 * Integer Modulo n
 
 Over the set of integer $\mathbb{Z}$, given $n \in \mathbb{Z}^+$ consider the equivalence relation:
-\[
-   a \equiv b \, \text{ if and only if } \, n | b - a.
-\]
+$$a \equiv b \, \text{ if and only if } \, n | b - a.$$
 
 1. Prove that the previous relationship is an equivalence relationship for every $n \in \mathbb{Z}^+$. The quotient set is written as $\mathbb{Z}/n\mathbb{Z}$ and called the set of integers modulo $n$.
 2. The addition and product in the the set of integers modulo $n$ is defined as follow respectively:
@@ -14,9 +12,8 @@ Over the set of integer $\mathbb{Z}$, given $n \in \mathbb{Z}^+$ consider the eq
 3. Prove that the adition and product are well defined associative and commutative operations.
 4. Prove that $(\mathbb{Z}/n\mathbb{Z}, +)$ is an Abelian group. Moreover prove that if $m \in \mathbb{Z}$ is relative prime with $n$ then $\langle m \rangle = \mathbb{Z}/n\mathbb{Z}$.
 5. Let
-\[
-   U_n = \lbrace [a] \in \mathbb{Z}/n\mathbb{Z} \, | \, (a, n) = 1 \rbrace.
-\]
+$$U_n = \lbrace [a] \in \mathbb{Z}/n\mathbb{Z} \, | \, (a, n) = 1 \rbrace.$$
+
 Prove that $(U_n, \cdot)$ is an Abelian group.
 
 * Dihedral Group
@@ -47,30 +44,20 @@ Let $D_{2n}$ the set of simmetries of a regular n-agon. Recall that a simmetry i
    - $G^p = \left\lbrace \frac{a}{b} \in \mathbb{Q} \, | \, (b, p) = 1 \right\rbrace$
 
 3. Let
-  \[
-     \mathbb{Z}(p^{\infty}) = \left\lbrace \left[ \frac{a}{b} \right] \in \mathbb{Q}/\mathbb{Z} \, | b = p^k \text{ for some }k \in \mathbb{N} \right\rbrace
-  \]
+  $$\mathbb{Z}(p^{\infty}) = \left\lbrace \left[ \frac{a}{b} \right] \in \mathbb{Q}/\mathbb{Z} \, | b = p^k \text{ for some }k \in \mathbb{N} \right\rbrace$$
 
 * Small Matrix Groups
 
 1. Let $V$ be a vector space. Prove that:
-\[
-   \operatorname{GL}(V) = \lbrace f: V \to V \, | \, f \text{ is linear and invertible } \rbrace
-\]
+$$\operatorname{GL}(V) = \lbrace f: V \to V \, | \, f \text{ is linear and invertible } \rbrace$$
 is a group with the operation of addition:
-\[
-   +:\operatorname{GL}(V) \times \operatorname{GL}(V) \to \operatorname{GL}(V) \text{ such that } (f+g)(\xi) = f(\xi) + g(\xi)
-\]
+$$+:\operatorname{GL}(V) \times \operatorname{GL}(V) \to \operatorname{GL}(V) \text{ such that } (f+g)(\xi) = f(\xi) + g(\xi)$$
 is a group. And also $\operatorname{GL}(V)$ with the composition forms a group. But only the first one is Abelian for any $V$ with $\operatorname{dim} V > 1$.
 
 2. Let $V$ be a vector space. Prove that:
-\[
-  \mathbb{A}(V) = \lbrace T:V \to V \, | \exists f \in \operatorname{GL}(V), \exists \xi_0 \in V; forall \xi \in V; T(\xi) = f(\xi) + \xi_0 \rbrace
-\]
+$$\mathbb{A}(V) = \lbrace T:V \to V \, | \exists f \in \operatorname{GL}(V), \exists \xi_0 \in V; forall \xi \in V; T(\xi) = f(\xi) + \xi_0 \rbrace$$
 is a group with the composition of functions.
 
 3. The Heisenberg group over the reals is:
-\[
-   H(\mathbb{R}) = \left\lbrace \begin{pmatrix} 1 & a & b \\ 0 & 1 & c \\ 0 & 0 & d \end{pmatrix} \mid \, a, b, c \in \mathbb{R} \right\rbrace
-\]
+$$H(\mathbb{R}) = \left\lbrace \begin{pmatrix} 1 & a & b \\ 0 & 1 & c \\ 0 & 0 & d \end{pmatrix} \mid \, a, b, c \in \mathbb{R} \right\rbrace$$
 Prove that $H(\mathbb{R})$ is a group with the matrix product. Prove that all elements of $H(\mathbb{R}$ have finite order.
