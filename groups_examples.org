@@ -1,0 +1,76 @@
+#+title:Groups
+
+* Integer Modulo n
+
+Over the set of integer $\mathbb{Z}$, given $n \in \mathbb{Z}^+$ consider the equivalence relation:
+\[
+   a \equiv b \, \text{ if and only if } \, n | b - a.
+\]
+
+1. Prove that the previous relationship is an equivalence relationship for every $n \in \mathbb{Z}^+$. The quotient set is written as $\mathbb{Z}/n\mathbb{Z}$ and called the set of integers modulo $n$.
+2. The addition and product in the the set of integers modulo $n$ is defined as follow respectively:
+   - $+: \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ such that $[a] + [b] = [a + b]$.
+   - $\cdot: \mathbb{Z}/n\mathbb{Z} \times \mathbb{Z}/n\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ such that $[a] \cdot [b] = [a \cdot b]$.
+3. Prove that the adition and product are well defined associative and commutative operations.
+4. Prove that $(\mathbb{Z}/n\mathbb{Z}, +)$ is an Abelian group. Moreover prove that if $m \in \mathbb{Z}$ is relative prime with $n$ then $\langle m \rangle = \mathbb{Z}/n\mathbb{Z}$.
+5. Let
+\[
+   U_n = \lbrace [a] \in \mathbb{Z}/n\mathbb{Z} \, | \, (a, n) = 1 \rbrace.
+\]
+Prove that $(U_n, \cdot)$ is an Abelian group.
+
+* Dihedral Group
+
+Let $D_{2n}$ the set of simmetries of a regular n-agon. Recall that a simmetry is a rigid transformation that takes a figure $F$ to itself.
+
+1. Prove that $D_{2n}$ has $2n$ elements. Notice that the vertices 1 and 2 of the n-agon must be allways be sent to adjacent vertices.
+2. Describe the set of simmetries of a square, a regular pentagon, and an equilateral triangle.
+3. Supposer that $\rho \in D_{2n}$ is the rotation of $\frac{2\pi}{n}$ radians throught the center of the n-agon in a clockwise manner. And $\sigma$ is the reflection thought the simmetry axis that passes through the vertex 1. Prove that:
+   - $\rho$, $\rho^2$, $\rho^3$, $\dots$, $\rho^{n-1}$ are all different.
+   - $\rho^n = 1$.
+   - $\rho^m = \rho^{l}$ if and only if $m \equiv l (\mod n)$.
+   - $\sigma^2 = 1$.
+   - $\forall k \in \mathbb{Z}$; $\sigma \neq r^k$.
+   - If $\sigma \, \rho^i = \sigma \, \rho^j$ then $i \equiv j (\mod n)$.
+   - $\rho \, \sigma = \sigma \, \rho^{n-1}$.
+   - $D_{2n} = \lbrace \sigma^i \, \rho^j \, | 1 = 0, 1; j = 0, 1, \dots, n-1 \rbrace$.
+   - If $n=12$ simplify $(\sigma \rho^9) \ (\sigma \rho^6)$
+
+* Numbers
+
+1. Let $\sim$ be the relation on $\mathbb{Q}$ given by $a \sim b$ if and only if $b - a \in \mathbb{Z}$. Prove that $\sim$ is an equivalence relation and its quotient $\mathbb{Q}/\mathbb{Z}$ with the operation $[a] + [b] = [a+b]$ is an infinite Abelian group. Prove that it is not finitely generated i.e. there is no $a_1, \dots, a_n \in \mathbb{Q}/\mathbb{Z}$ such that $\langle a_1, \dots, a_n \rangle = \mathbb{Q}/\mathbb{Z}$.
+
+2. Let $p \in \mathbb{Z}^+$ be a prime number. Consider the following sets with the adition of rational numbers, prove that both are Abelian groups.
+
+   - $G_p = \left\lbrace \frac{a}{b} \in \mathbb{Q} \, | \, b = p^k \text{ for some } k \in \mahtbb{N} \right\rbrace$
+
+   - $G^p = \left\lbrace \frac{a}{b} \in \mathbb{Q} \, | \, (b, p) = 1 \right\rbrace$
+
+3. Let
+  \[
+     \mathbb{Z}(p^{\infty}) = \left\lbrace \left[ \frac{a}{b} \right] \in \mathbb{Q}/\mathbb{Z} \, | b = p^k \text{ for some }k \in \mathbb{N} \right\rbrace
+  \]
+
+* Small Matrix Groups
+
+1. Let $V$ be a vector space. Prove that:
+\[
+   \operatorname{GL}(V) = \lbrace f: V \to V \, | \, f \text{ is linear and invertible } \rbrace
+\]
+is a group with the operation of addition:
+\[
+   +:\operatorname{GL}(V) \times \operatorname{GL}(V) \to \operatorname{GL}(V) \text{ such that } (f+g)(\xi) = f(\xi) + g(\xi)
+\]
+is a group. And also $\operatorname{GL}(V)$ with the composition forms a group. But only the first one is Abelian for any $V$ with $\operatorname{dim} V > 1$.
+
+2. Let $V$ be a vector space. Prove that:
+\[
+  \mathbb{A}(V) = \lbrace T:V \to V \, | \exists f \in \operatorname{GL}(V), \exists \xi_0 \in V; forall \xi \in V; T(\xi) = f(\xi) + \xi_0 \rbrace
+\]
+is a group with the composition of functions.
+
+3. The Heisenberg group over the reals is:
+\[
+   H(\mathbb{R}) = \left\lbrace \begin{pmatrix} 1 & a & b \\ 0 & 1 & c \\ 0 & 0 & d \end{pmatrix} \mid \, a, b, c \in \mathbb{R} \right\rbrace
+\]
+Prove that $H(\mathbb{R})$ is a group with the matrix product. Prove that all elements of $H(\mathbb{R}$ have finite order.
